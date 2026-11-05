@@ -1,8 +1,12 @@
-[tool.poetry]
+[project]
 name = "src"
 version = "0.1.0"
 description = "Mate task for first lesson"
-authors = ["Yurii Okal <yurii.okal@mate.com>"]
+dynamic = ["dependencies"]
+authors = [
+    { name = "Yurii Okal", email = "yurii.okal@mate.com" }
+]
+requires-python = ">=3.10,<4.0"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -11,7 +15,7 @@ sqlalchemy = ">=2.0.45,<2.1"
 pytest = "^8.3.4"
 pydantic = "^2.12.0"
 pydantic-settings = "^2.7.0"
-pandas = "^2.2.3"
+pandas = "^2.3.3"
 tqdm = "^4.67.1"
 uvicorn = "^0.34.0"
 httpx = "^0.28.1"
